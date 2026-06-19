@@ -15,6 +15,7 @@ public class JwtServiceClass {
     public String generateToken(String username){
         return Jwts.builder()
                 .subject(username)
+                .claim("role","USER")
                 .issuedAt(new Date())
                 .expiration(new Date(System.currentTimeMillis()+1000L *60*60*24*7))
                 .signWith(Keys.hmacShaKeyFor(SECRET.getBytes(StandardCharsets.UTF_8)))
