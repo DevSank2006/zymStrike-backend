@@ -15,7 +15,10 @@ import java.util.List;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("health-records")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins ={
+    "https://zym-strike-frontend.vercel.app",
+        "http://localhost:5173"
+})
 public class HealthRecordsController {
     private final HealthRecordsService healthRecordsService;
     @PostMapping("/{id}")

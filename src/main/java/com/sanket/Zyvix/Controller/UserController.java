@@ -19,7 +19,10 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/users")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+        "https://zym-strike-frontend.vercel.app",
+        "http://localhost:5173"
+})
 public class UserController {
     private final UserService userService;
     private final AuthenticationManager authenticationManager;

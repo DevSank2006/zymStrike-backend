@@ -14,7 +14,10 @@ import java.util.Set;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/attendance")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+        "https://zym-strike-frontend.vercel.app",
+        "http://localhost:5173"
+})
 public class AttendanceController {
     public final AttendanceService attendanceService;
     @PostMapping("/{id}")
