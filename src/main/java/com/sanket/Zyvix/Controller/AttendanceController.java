@@ -15,7 +15,7 @@ import java.util.Set;
 @RestController
 @RequestMapping("/attendance")
 @CrossOrigin(origins = {
-        "https://zym-strike-frontend.vercel.app",
+        "https://zym-strike.vercel.app/",
         "http://localhost:5173"
 })
 public class AttendanceController {

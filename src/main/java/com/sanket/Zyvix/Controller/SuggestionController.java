@@ -16,7 +16,7 @@ import java.util.prefs.AbstractPreferences;
 
 @RestController
 @RequestMapping("suggestion")
-@CrossOrigin(origins = { "https://zym-strike-frontend.vercel.app",
+@CrossOrigin(origins = { "https://zym-strike.vercel.app/",
         "http://localhost:5173"})
 @RequiredArgsConstructor
 public class SuggestionController {

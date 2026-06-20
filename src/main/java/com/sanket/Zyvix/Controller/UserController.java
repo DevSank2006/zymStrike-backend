@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/users")
 @CrossOrigin(origins = {
-        "https://zym-strike-frontend.vercel.app",
+        "https://zym-strike.vercel.app/",
         "http://localhost:5173"
 })
 public class UserController {
